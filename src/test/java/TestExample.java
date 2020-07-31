@@ -99,4 +99,15 @@ public class TestExample {
         assertFalse(language.contains("J"));
     }
 
+    @Test
+    public void testArraysAreEqual(){
+        int[] numbers = {789, 567, 22033};
+        int[] otherNumbers = new int[3];
+        otherNumbers[0] = 789;
+        otherNumbers[1] = 567;
+        otherNumbers[2] = 22033;
+
+        assertArrayEquals(numbers, otherNumbers);
+    }
+
 }
