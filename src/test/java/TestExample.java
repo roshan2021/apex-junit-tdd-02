@@ -60,6 +60,7 @@ public class TestExample {
     public void testIfBooleansWork(){
         assertTrue("F".equals("F"));
         assertFalse(1 == 0);
+        //assertFalse(1 != 0);
     }
 
 }
