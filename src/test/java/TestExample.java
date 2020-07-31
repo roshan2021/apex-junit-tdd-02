@@ -125,6 +125,9 @@ public class TestExample {
     @Test
     public void testIfRoshanIsInList(){
         assertEquals("Roshan", names.get(0));
+        assertNotEquals("roshan", names.get(0));
+        assertTrue(names.contains("Roshan"));
+        assertFalse(names.contains("Josh"));
     }
 
 }
