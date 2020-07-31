@@ -68,13 +68,28 @@ public class TestExample {
         //assertFalse(1 != 0);
     }
 
-    //the following arrays are not the same
+    //the following arrays are not the same (objects) vs (values)
+    //Lists are objects that represent many values
     @Test
     public void testIfListsAreNotTheSame(){
         List<String> language = new ArrayList<>();
         List<String> moreLanguages = new ArrayList<>();
 
         assertNotSame(language, moreLanguages);
+
+        //sidenote: languages.get(0); languages.get(1); represents "values" || "elements and
+        //would use assertNotEquals since it is not objects being compared, but values
+    }
+
+    @Test
+    public void testIfArraysAreEqual(){
+        int[] numbers = {1, 2, 3};
+        int[] otherNumbers = new int[3];
+        otherNumbers[0] = 1;
+        otherNumbers[1] = 2;
+        otherNumbers[2] = 3;
+
+        assertArrayEquals(numbers, otherNumbers);
     }
 
 }
