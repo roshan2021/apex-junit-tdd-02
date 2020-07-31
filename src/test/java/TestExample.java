@@ -59,7 +59,8 @@ public class TestExample {
     @Test
     public void testIfBooleansWork(){
         assertTrue("F".equals("F"));
-        assertFalse(1 == 0);
+        boolean var = 1 == 0;
+       assertFalse(var);
         //assertFalse(1 != 0);
     }
 
