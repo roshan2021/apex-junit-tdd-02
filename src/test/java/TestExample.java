@@ -43,4 +43,17 @@ public class TestExample {
         assertNotSame(sheep, dog);
         assertSame(sheep, clonnedSheep);
     }
+
+    @Test
+    public void testIfArrayEquals(){
+     //assertArrayEquals method checks 2 object arrays are equal or not. If not
+     //, it throws an Exception
+        char[] expected = {'J', 'u', 'n', 'i', 't'};
+        char [] actual = "Junit".toCharArray();
+
+        System.out.println("expected = " + expected);
+        System.out.println("actual = " + actual);
+
+        assertArrayEquals(expected, actual);
+    }
 }
