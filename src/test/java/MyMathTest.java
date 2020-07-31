@@ -10,4 +10,9 @@ public class MyMathTest {
         assertEquals(150, MyMath.sum(50,100));
     }
 
+    @Test
+    public void testIfSubtractWorks(){
+        assertEquals(7.8, MyMath.subtract(10.0, 2.2), 0);
+    }
+
 }
