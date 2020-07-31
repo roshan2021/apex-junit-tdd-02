@@ -92,4 +92,11 @@ public class TestExample {
         assertArrayEquals(numbers, otherNumbers);
     }
 
+    @Test
+    public void testIfWordContains(){
+        String language = "PHP";
+        assertTrue(language.contains("H"));
+        assertFalse(language.contains("J"));
+    }
+
 }
