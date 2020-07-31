@@ -56,4 +56,10 @@ public class TestExample {
 
         assertArrayEquals(expected, actual);
     }
+    @Test
+    public void testIfBooleansWork(){
+        assertTrue("F".equals("F"));
+        assertFalse(1 == 0);
+    }
+
 }
