@@ -128,6 +128,15 @@ public class TestExample {
         assertNotEquals("roshan", names.get(0));
         assertTrue(names.contains("Roshan"));
         assertFalse(names.contains("Josh"));
+        assertEquals(1, this.names.size());
+        this.names.add("Lauren");
+        assertEquals(2, this.names.size());
+        assertSame("Lauren", this.names.get(1));
+    }
+
+    @Test
+    public void testIfNamesIsInitialized(){
+        assertNotNull(names);
     }
 
 }
