@@ -1,3 +1,4 @@
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -6,6 +7,17 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 public class TestExample {
+
+    List<String> names;
+
+    @Before
+    public void setUP(){
+        names = new ArrayList<>();
+        names.add("Roshan");
+    }
+
+
+
     //Make assertions that the expected value matches the actual value
     @Test
     public void myFirstTest(){
@@ -108,6 +120,11 @@ public class TestExample {
         otherNumbers[2] = 22033;
 
         assertArrayEquals(numbers, otherNumbers);
+    }
+
+    @Test
+    public void testIfRoshanIsInList(){
+        assertEquals("Roshan", names.get(0));
     }
 
 }
