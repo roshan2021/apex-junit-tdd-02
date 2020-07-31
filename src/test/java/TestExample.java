@@ -1,4 +1,8 @@
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class TestExample {
@@ -62,6 +66,15 @@ public class TestExample {
         boolean var = 1 == 0;
        assertFalse(var);
         //assertFalse(1 != 0);
+    }
+
+    //the following arrays are not the same
+    @Test
+    public void testIfListsAreNotTheSame(){
+        List<String> language = new ArrayList<>();
+        List<String> moreLanguages = new ArrayList<>();
+
+        assertNotSame(language, moreLanguages);
     }
 
 }
